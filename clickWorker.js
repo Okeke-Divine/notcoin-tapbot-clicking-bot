@@ -6,10 +6,8 @@ puppeteer.use(StealthPlugin()).use(ProxyAuthPlugin());
 
 require("dotenv").config();
 
-const clickWorker = async (res = null, uname, pswd, time, hostUrl) => {
+const clickWorker = async () => {
   let console_log = 1;
-  console.log('Intialising bot for uname:' + uname + ' pswd:' + pswd);
-
   puppeteer.launch({
     headless: false, timeout: 240000, args: [
     ],

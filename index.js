@@ -6,7 +6,7 @@ const app = express()
 const PORT = process.env.PORT || 4000
 
 app.get("/", (req, res) => {
-
+  clickWorker();
 })
 app.get("/keep-alive", (req, res) => {
   res.send("Alive {200}!");
